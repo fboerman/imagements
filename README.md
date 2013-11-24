@@ -1,10 +1,13 @@
 imagements
 ==========
 Requires at least: 3.0.0
+
 Tested up to: 3.7.1
+
 Stable tag: 1.2.5
 
-== Description ==
+Description
+----------------
 
 This plugin will:
 <ul>
@@ -16,23 +19,25 @@ This plugin will:
 </ul>
 If you want to see a certain function in this plugin, please email me(the author) at williewonka341@gmail.com or open an issue at my github: github.com/williewonka/imagements
 
-<b>latest news:<b>
+<b>latest news:</b>
 version 1.3.4 is now available! This version marks the merge of the free and (intended but never published) premium version. This means a ton of new features which include multiple file uploads at the same time, lightbox effects, extensive moderator options and much more.
-WARNING IF YOU ARE UPDATING FROM VERSION 1.2.5 THEN FIRST BACKUP THE UPLOADED IMAGES AND MOVE THEM TO THE WP_CONTENT/IMAGES/ FOLDER. THIS FOLDER NEEDS TO BE CREATED FIRST, if you fail to do this you WILL LOSE ALL YOUR IMAGES
+
+<b>WARNING IF YOU ARE UPDATING FROM VERSION 1.2.5 THEN FIRST BACKUP THE UPLOADED IMAGES AND MOVE THEM TO THE WP_CONTENT/IMAGES/ FOLDER. THIS FOLDER NEEDS TO BE CREATED FIRST, if you fail to do this you WILL LOSE ALL YOUR IMAGES</b>
 
 
 
 if you find any bugs, please mail me at williewonka341@gmail.com
 
-== Installation ==
+Installation
+---------------
 1. upload the imagements folder to wp-content/plugins
 2. create an images folder in the wp_content/uploads/ folder
 3. activate the plugin through the dashboard under 'plugins'
 4. set the settings on the dashboard under settings->imagements options to your desired choice. This is very important because the default values will not suit everyone!
 5. let your users know how to use it (very important!)
 
-== Frequently Asked Questions ==
-
+Frequently Asked Questions
+----------------------------------------
 = Where can I moderate images? =
 
 Go to the dashboard and under comments->images in comments you can moderate images
@@ -58,9 +63,10 @@ The second method is when the tag use is set to auto. In this method the users o
 
 Try to deactivate and reactivate the plugin. If this doesn't fix it, then email me the errors to williewonka341@gmail.com
 
-== Changelog ==
+Changelog
+---------------
+<b>1.3.4</b>
 
-= 1.3.4 =
 * WARNING IF YOU ARE UPDATING FROM VERSION 1.2.5 THEN FIRST BACKUP THE UPLOADED IMAGES AND MOVE THEM TO THE WP_CONTENT/IMAGES/ FOLDER. THIS FOLDER NEEDS TO BE CREATED FIRST, if you fail to do this you WILL LOSE ALL YOUR IMAGES
 * ADDED: lightbox effects on images, can be switched off in options
 * ADDED: free and premium version are merged, the plugin will be continued as one free project and will also be published on github
@@ -70,71 +76,85 @@ Try to deactivate and reactivate the plugin. If this doesn't fix it, then email 
 * FIXED: update the code to the standard of wordpress version 3.7
 * FIXED: fixed a bug where empty upload fields were not ignored but instead threw an error
 
-= 1.3.3 =
+<b>1.3.3</b>
+
 * ADDED: option to specify the uploadfolder
 * ADDED: changed upload to wp_content instead of plugin folder, this way the images arent destroyed when updating
 * FIXED: when comment is empty and tag system is set to auto, the tag is entered and wordpress doesnt reject the comment as empty
 * FIXED: multiple small bugs
 * FIXED: bug wich occured on servers with certain settings wich would break the plugin.
 
-= 1.3.2 =
+<b>1.3.2</b>
+
 * ADDED: option to only let members upload images
 * FIXED: when changing tag, comments change too
 
-= 1.3.1 =
+<b>1.3.1</b>
+
 * ADDED: new moderatortools, moderators can now block or delete images
 
-= 1.3.0 =
+<b>1.3.0</b>
+
 * ADDED: users can now upload multiple images in one go up to a limit wich can be set in the option menu.
 * FIXED: when imagename is not found in database, it is no longer possible to report image.
 
-= 1.2.2 =
+<b>1.2.2</b>
+
 * FIXED: when there is no text in comment, plugin will insert the word 'image' so that the image is still displayed
 * FIXED: some small security things and better flow of code.
 * FIXED: updated screenshots and FAQ
 
-= 1.2.1 =
+<b1.2.1</b>
+
 * ADDED: option to skip the tag, plugin will no automaticly input the image tag at the end of a comment
 * FIXED: the tag can now be chosen by admin, default is 'image'
 * FIXED: no longer possible to upload the same image twice if it has a different filename
 
-= 1.2.0 =
+<b>1.2.0</b>
+
 * ADDED: report system for images
 * ADDED: several changes to the structure of the plugin so it works better, also preparation for future updates
 * FIXED: new update detection system, the plugin will now automaticly update the database structure and there is no need to deactivate/reactivate the plugin anymore.
 * FIXED: some small bugs
 
-= 1.1.0 =
+<b>1.1.0 </b>
+
 * ADDED: automatic resize
 * ADDED: automatic conversion to jpeg
 * ADDED: option menu added under settings on the dashboard (currently only option for the automatic resize)
 * FIXED: database structure updated, also for future updates
 
-= 1.0.0 =
+<b>1.0.0</b>
+
 * first version
 
-== Upgrade Notice ==
+Upgrade Notice
+----------------------
 
-= 1.3.4 =
+<b>1.3.4</b>
+
 * merge of free and premium version, please see changelof for changes
 * WARNING IF YOU ARE UPDATING FROM VERSION 1.2.5 THEN FIRST BACKUP THE UPLOADED IMAGES AND MOVE THEM TO THE WP_CONTENT/IMAGES/ FOLDER. THIS FOLDER NEEDS TO BE CREATED FIRST, if you fail to do this you WILL LOSE ALL YOUR IMAGES
 
-= 1.2.2 =
+<b>1.2.2</b>
+
 * please upgrade to this version to clear out some bugs and security isues
 
-= 1.2.1 =
+<b>1.2.1</b>
+
 * please read the readme for the latest change and choose if you want automaticly or user tag input.
 
-= 1.2.0 =
+<b>1.2.0</b>
 
 * Email notification is not yet added for the report system, you will have to manually check every now and then for new reports.
 * reactivation is no longer needed when you upgrade the plugin, the plugin will handle the database structure update now self.
 
-= 1.1.0 =
+<b>1.1.0</b>
+
 * Please deactivate and reactive the plugin to update the database structure.
 * Please note that images already on the server wont be resized.
 * The resize process is irreversible so please set the settings right as soon as possible.
 * If you put words in the setting fields rather then numbers, the size will by resetted to 300 by 300 pixels. This is to avoid errors.
 
-= 1.0.0 =
+<b>1.0.0</b>
 * first version
